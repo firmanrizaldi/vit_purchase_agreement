@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="vit_purchase_agreement.list">
+      <field name="name">vit_purchase_agreement list</field>
+      <field name="model">vit_purchase_agreement.vit_purchase_agreement</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="vit_purchase_agreement.action_window">
+      <field name="name">vit_purchase_agreement window</field>
+      <field name="res_model">vit_purchase_agreement.vit_purchase_agreement</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="vit_purchase_agreement.action_server">
+      <field name="name">vit_purchase_agreement server</field>
+      <field name="model_id" ref="model_vit_purchase_agreement_vit_purchase_agreement"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="vit_purchase_agreement" id="vit_purchase_agreement.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="vit_purchase_agreement.menu_1" parent="vit_purchase_agreement.menu_root"/>
+    <menuitem name="Menu 2" id="vit_purchase_agreement.menu_2" parent="vit_purchase_agreement.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="vit_purchase_agreement.menu_1_list" parent="vit_purchase_agreement.menu_1"
+              action="vit_purchase_agreement.action_window"/>
+    <menuitem name="Server to list" id="vit_purchase_agreement" parent="vit_purchase_agreement.menu_2"
+              action="vit_purchase_agreement.action_server"/>
+    -->
+  </data>
+</odoo>

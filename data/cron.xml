@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+        <record id="cron_cek_deadline" model="ir.cron">
+            <field name="name">Cek Deadline</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model_id" ref="model_purchase_requisition"/>
+            <field name="state">code</field>
+            <field name="code">model._cek_agreement_deadline()</field>
+        </record>
+
+    </data>
+</odoo>
